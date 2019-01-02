@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-hello",
+      "appliesTo": "hello/hello.py",
+      "type": "launch"
+    },
+    {
+      "taskName": "task-hello",
+      "appliesTo": "hello/hello.py",
+      "type": "launch"
+    }
+  ]
+}
