@@ -10,7 +10,7 @@ style.use('ggplot')
 start = dt.datetime(2017, 1, 1)
 end = dt.datetime(2017, 8, 31)
 
-df = web.DataReader('JSMR.JK', 'yahoo', start, end);
+df = web.DataReader('JSMR.JK', 'yahoo', start, end)
 # print("Reading data!")
 # print(df.head())
 print(df.tail(5)) # the last 5 data
@@ -30,7 +30,7 @@ ax1.plot(dfcsv.index, dfcsv['100ma'])
 ax2.bar(dfcsv.index, dfcsv['Volume'])
 
 # dfcsv['Close'].plot();
-plt.show();
+plt.show()
 
 
 print('EXIT!!!')
