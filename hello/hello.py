@@ -14,3 +14,4 @@ print(startDate.date())
 df = pdr.data.DataReader('CPIN.JK', 'yahoo', startDate, endDate)
 
 print(df.tail(5))
+print(df.head(3))
