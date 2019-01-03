@@ -33,8 +33,12 @@ if local_data == 'n':
     # now filter out zero volume trading day
     
     print("Filtered for V > 0")
-    print(cpin_jk[cpin_jk['Volume'] > 0].tail(5))
-    
+    # print(cpin_jk[cpin_jk['Volume'] > 0].tail(5))
+
+    cpin_jk_vol_zero = cpin_jk[cpin_jk['Volume'] > 0]
+
+    print(cpin_jk_vol_zero)
+
 elif local_data == 'y':
     print("Using local data: JSMR.JK")
     # jsmr_jk = pd.read_csv('JSMR.csv', parse_dates = True, index_col = 0)
